@@ -1,0 +1,235 @@
+<!doctype html>
+
+
+<html>
+
+<head>
+	<title> AGENCY </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<style>
+	
+		body {
+		background: url('pic/front.png');
+		background-size: cover;
+		}
+		
+		.is_overlay{ display: block; width: 100%; height: 100%; }
+		#trailer {
+		position: fixed;
+		top: 0; right: 0; bottom: 0; left: 0;
+		overflow: hidden; 
+		z-index: -1;
+		}
+
+		#trailer > video {
+		position: fixed;
+		min-width: 100%; 
+		min-height: 100%;
+		overflow:hidden;
+		width: auto;
+		height: auto;
+		}
+		
+		p,a {
+		font-family: "Fira Sans Light";
+		color: #dcdcdc;
+		font-size:150%;
+		line-height:0.8;
+		}
+		
+		h6 {
+		font-family: "Fira Sans Regular";
+		color: #ffffff;
+		}
+		
+		a:hover { color: #222f32; }
+		
+		a:link { text-decoration: none; }
+		
+		a:visited { text-decoration: none; }
+		
+		#container { margin-top:15%; visibility:hidden; }
+		
+		#containerRu { margin-top:-19.2%; visibility:hidden; }
+		
+		#Cross {visibility:hidden;}
+		
+		#MenuEn {visibility:hidden;}
+		
+		#MenuRussian {visibility:hidden;}
+		
+		#MenuRussian1 {visibility:hidden;}
+		
+		#MenuRussian2 {visibility:hidden;}
+		
+		@font-face {
+		font-family: Fira Sans ExtraLight;
+		src: local("Fira Sans ExtraLight"),
+        url(fira-sans.extralight.ttf);
+		}
+		@font-face {
+		font-family: Fira Sans Light;
+		src: local("Fira Sans Light"),
+        url(fira-sans.light.ttf);
+		}
+		@font-face {
+		font-family: Fira Sans Regular;
+		src: local("Fira Sans Regular"),
+        url(fira-sans.regular.ttf);
+		}
+		
+	</style>
+</head>
+
+<body>
+
+	<div id="MenuEnglish1">
+		<a><img src="pic/menu.png" alt="Error!" style="width:35px; height:22px; position: absolute; top:30px; right:40px"> </a>
+	</div>
+	
+	<div id="MenuRussian1">
+		<a><img src="pic/menu.png" alt="Error!" style="width:35px; height:22px; position: absolute; top:30px; right:40px"> </a>
+	</div>
+	
+	<div id="MenuEn">
+		<a><img src="pic/EN.png" alt="Error!" style="width:32px; height:22px; position: absolute; top:26px; right:100px"> </a>
+	</div>
+	
+	<div id="MenuRu">
+		<a><img src="pic/ru.png" alt="Error!" style="width:40px; height:22px; position: absolute; top:26px; right:100px"> </a>
+	</div>
+	
+	<div id="MenuEnglish2">
+		<a><img src="pic/1beloe.png" style="width:225px; height:65px; position:absolute; top:11.2em; margin-left:41%; opacity:0.5"></a>
+	</div>
+	
+	<div id="MenuRussian2">
+		<a><img src="pic/1beloe.png" style="width:225px; height:65px; position:absolute; top:11.2em; margin-left:41%; opacity: 0.5"></a>
+	</div>
+	
+	<div id="MenuEnglish3">
+		<p style="position:absolute; top:337px; right:551px; color:#dcdcdc; font-family:Fira Sans ExtraLight; font-size:133%;"> PHOTO & VIDEO AGENCY </p>
+	</div>
+	
+	<div id="MenuRussian">
+		<p style="position:absolute; top:340px; right:551px; color:#dcdcdc; font-family:Fira Sans ExtraLight; font-size:121%;"> ФОТО & ВИДЕО АГЕНСТВО </p>
+	</div>
+	
+	<div id="Cross">
+		<a><img src="pic/krestik.png" alt="Error!" style="width:40px; height:40px; position: absolute; top:30px; right:40px"> </a>
+	</div>
+	
+	<div id="trailer" class="is_overlay">
+		<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" muted>
+			<source src="pervij.mp4" type="video/mp4"></source>
+			<source src="pervij1.ogv" type="video/ogg"></source>
+		</video>
+	</div>
+	
+	<div id="container" align="center">
+		<img src="pic/black.jpg" alt="Error!" style="width:100%; height:100%; top:0; right:0; position: fixed; margin:0; opacity:0.8; z-index:-1;">
+		<tr>
+			<td><p><a href="about_us.html">ABOUT US </a> </p> </td>
+		</tr>
+		<tr>
+			<td><p><a href="portfolio.html">PORTFOLIO </a> </p> </td>
+		</tr>
+		<tr>
+			<td><p><a href="calendar.html">CALENDAR </a> </p> </td>
+		</tr>
+		<tr>
+			<td><p><a href="contacts.html">CONTACTS </a> </p> </td>
+		</tr>
+		<tr>
+			<td><p><a href="prices.html">PRICES </a> </p> </td>
+		</tr>
+	</div>
+	
+	<div id="containerRu" align="center">
+		<img src="pic/black.jpg" alt="Error!" style="width:100%; height:100%; top:0; right:0; position: fixed; margin:0; opacity:0.8; z-index:-1;">
+		<tr>
+			<td><p><a href="about_us.html">О НАС </a> </p> </td>
+		</tr>
+		<tr>
+			<td><p><a href="portfolio.html">ПОРТФОЛИО </a> </p> </td>
+		</tr>
+		<tr>
+			<td><p><a href="calendar.html">КАЛЕНДАРЬ </a> </p> </td>
+		</tr>
+		<tr>
+			<td><p><a href="contacts.html">КОНТАКТЫ </a> </p> </td>
+		</tr>
+		<tr>
+			<td><p><a href="prices.html">ЦЕНЫ </a> </p> </td>
+		</tr>
+	</div>
+	
+	<script>
+		document.getElementById("MenuEnglish1").addEventListener("click", myFunction1);
+		document.getElementById("MenuEnglish2").addEventListener("click", myFunction1);
+		document.getElementById("Cross").addEventListener("click", myFunction2);
+		document.getElementById("MenuRu").addEventListener("click", myFunction3);
+		document.getElementById("MenuEn").addEventListener("click", myFunction4);
+		document.getElementById("MenuRussian1").addEventListener("click", myFunction5);
+		document.getElementById("MenuRussian2").addEventListener("click", myFunction5);
+
+	function myFunction1() {
+		document.getElementById("container").style.visibility= 'visible' ;
+		document.getElementById("Cross").style.visibility= 'visible' ;
+		document.getElementById("MenuEnglish1").style.visibility= 'hidden' ;
+		document.getElementById("MenuEnglish2").style.visibility= 'hidden' ;
+		document.getElementById("MenuEnglish3").style.visibility= 'hidden' ;
+		document.getElementById("MenuEn").style.visibility= 'hidden' ;
+		document.getElementById("MenuRu").style.visibility= 'hidden' ;
+		document.getElementById("MenuRussian").style.visibility= 'hidden' ;
+		}
+		
+	function myFunction2() {
+		document.getElementById("container").style.visibility= 'hidden' ;
+		document.getElementById("containerRu").style.visibility= 'hidden' ;
+		document.getElementById("Cross").style.visibility= 'hidden' ;
+		document.getElementById("MenuEnglish1").style.visibility= 'visible' ;
+		document.getElementById("MenuEnglish2").style.visibility= 'visible' ;
+		document.getElementById("MenuEnglish3").style.visibility= 'visible' ;
+		document.getElementById("MenuRu").style.visibility= 'visible' ;
+		}
+		
+	function myFunction3() {
+		document.getElementById("MenuEn").style.visibility= 'visible' ;
+		document.getElementById("MenuRu").style.visibility= 'hidden' ;
+		document.getElementById("MenuRussian").style.visibility= 'visible' ;
+		document.getElementById("MenuEnglish3").style.visibility= 'hidden' ;
+		document.getElementById("MenuRussian1").style.visibility= 'visible' ;
+		document.getElementById("MenuRussian2").style.visibility= 'visible' ;
+		document.getElementById("MenuEnglish1").style.visibility= 'hidden' ;
+		document.getElementById("MenuEnglish2").style.visibility= 'hidden' ;
+		}
+		
+	function myFunction4() {
+		document.getElementById("MenuEn").style.visibility= 'hidden' ;
+		document.getElementById("MenuRu").style.visibility= 'visible' ;
+		document.getElementById("MenuRussian").style.visibility= 'hidden' ;
+		document.getElementById("MenuEnglish3").style.visibility= 'visible' ;
+		document.getElementById("MenuRussian1").style.visibility= 'hidden' ;
+		document.getElementById("MenuRussian2").style.visibility= 'hidden' ;
+		document.getElementById("MenuEnglish1").style.visibility= 'visible' ;
+		document.getElementById("MenuEnglish2").style.visibility= 'visible' ;
+		}
+		
+	function myFunction5() {
+		document.getElementById("containerRu").style.visibility= 'visible' ;
+		document.getElementById("Cross").style.visibility= 'visible' ;
+		document.getElementById("MenuRussian1").style.visibility= 'hidden' ;
+		document.getElementById("MenuRussian2").style.visibility= 'hidden' ;
+		document.getElementById("MenuEn").style.visibility= 'hidden' ;
+		document.getElementById("MenuRu").style.visibility= 'hidden' ;
+		document.getElementById("MenuRussian").style.visibility= 'hidden' ;
+		}
+	</script>
+
+</body>
+
+
+</html>
